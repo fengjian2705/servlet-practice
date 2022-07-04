@@ -10,7 +10,7 @@ public class LifeServlet implements Servlet {
      * 弊端：创建需要时间，体验不好
      * 解决：
      * 1. <load-on-startup>4</load-on-startup> 服务器启动时，初始化标签
-     * 2. 标签内部数值大于 0 的数，建议 4 ，1~3 被 web.xml 占用了
+     * 2. 标签内部数值大于 0 的数，建议 4 ，1~3 被 Tomcat web.xml 占用了
      * @param servletConfig
      * @throws ServletException
      */

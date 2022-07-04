@@ -9,17 +9,33 @@
         <!--当前 servlet 名称，任意-->
         <servlet-name>QuickServlet</servlet-name>
         <!--配置的 servlet 全限定类名-->
-        <servlet-class>pro.fengjian.QuickServlet</servlet-class>
+        <servlet-class>pro.fengjian.servlet.QuickServlet</servlet-class>
     </servlet>
 
-    <!--设置 servlet 映射-->
+    <!--设置 servlet 映射: 精准匹配-->
     <servlet-mapping>
         <!--配置映射的 servlet 名称-->
         <servlet-name>QuickServlet</servlet-name>
         <!--具体的访问地址，/ 开头-->
         <url-pattern>/quickServlet</url-pattern>
     </servlet-mapping>
-    
+    <servlet-mapping>
+        <!--配置映射的 servlet 名称-->
+        <servlet-name>QuickServlet</servlet-name>
+        <!--具体的访问地址，/ 开头-->
+        <url-pattern>/quickServlet2</url-pattern>
+    </servlet-mapping>
+    <!--设置 servlet 映射: 目录匹配-->
+    <servlet-mapping>
+        <servlet-name>QuickServlet</servlet-name>
+        <url-pattern>/aa/*</url-pattern>
+    </servlet-mapping>
+    <!--设置 servlet 映射: 后缀匹配-->
+    <servlet-mapping>
+        <servlet-name>QuickServlet</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+
     <!--LifeServlet-->
     <servlet>
         <servlet-name>LifeServlet</servlet-name>
@@ -30,5 +46,15 @@
     <servlet-mapping>
         <servlet-name>LifeServlet</servlet-name>
         <url-pattern>/lifeServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!--ServletDemo1-->
+    <servlet>
+        <servlet-name>ServletDemo1</servlet-name>
+        <servlet-class>pro.fengjian.servlet.ServletDemo1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletDemo1</servlet-name>
+        <url-pattern>/servletDemo1</url-pattern>
     </servlet-mapping>
 </web-app>

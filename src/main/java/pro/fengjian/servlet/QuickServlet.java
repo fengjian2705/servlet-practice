@@ -1,4 +1,4 @@
-package pro.fengjian;
+package pro.fengjian.servlet;
 
 import javax.servlet.*;
 import java.io.IOException;
