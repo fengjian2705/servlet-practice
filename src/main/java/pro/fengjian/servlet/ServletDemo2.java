@@ -45,5 +45,7 @@ public class ServletDemo2 extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("doPost...");
+        req.setCharacterEncoding("utf-8");
+        doGet(req,resp);
     }
 }
