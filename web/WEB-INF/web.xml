@@ -42,12 +42,12 @@
         <servlet-class>pro.fengjian.life.LifeServlet</servlet-class>
         <load-on-startup>4</load-on-startup>
     </servlet>
-    
+
     <servlet-mapping>
         <servlet-name>LifeServlet</servlet-name>
         <url-pattern>/lifeServlet</url-pattern>
     </servlet-mapping>
-    
+
     <!--ServletDemo1-->
     <servlet>
         <servlet-name>ServletDemo1</servlet-name>
@@ -57,7 +57,7 @@
         <servlet-name>ServletDemo1</servlet-name>
         <url-pattern>/servletDemo1</url-pattern>
     </servlet-mapping>
-    
+
     <!--ServletDemo2-->
     <servlet>
         <servlet-name>ServletDemo2</servlet-name>
@@ -66,5 +66,45 @@
     <servlet-mapping>
         <servlet-name>ServletDemo2</servlet-name>
         <url-pattern>/servletDemo2</url-pattern>
+    </servlet-mapping>
+
+    <!--  AServlet  -->
+    <servlet>
+        <servlet-name>AServlet</servlet-name>
+        <servlet-class>pro.fengjian.servlet.AServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AServlet</servlet-name>
+        <url-pattern>/aServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--  BServlet  -->
+    <servlet>
+        <servlet-name>BServlet</servlet-name>
+        <servlet-class>pro.fengjian.servlet.BServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BServlet</servlet-name>
+        <url-pattern>/bServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--  CServlet  -->
+    <servlet>
+        <servlet-name>CServlet</servlet-name>
+        <servlet-class>pro.fengjian.servlet.CServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CServlet</servlet-name>
+        <url-pattern>/cServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--  DServlet  -->
+    <servlet>
+        <servlet-name>DServlet</servlet-name>
+        <servlet-class>pro.fengjian.servlet.DServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DServlet</servlet-name>
+        <url-pattern>/dServlet</url-pattern>
     </servlet-mapping>
 </web-app>

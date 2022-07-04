@@ -12,7 +12,7 @@ public class ServletDemo2 extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        resp.setCharacterEncoding("gbk");
         System.out.println("---------------------请求行");
         System.out.println("请求方式: " + req.getMethod());
         System.out.println("虚拟路径: " + req.getContextPath());
@@ -36,10 +36,21 @@ public class ServletDemo2 extends HttpServlet {
         }
         System.out.println();
         System.out.println("getParameterMap: ");
-        Map<String,String>parameterMap = req.getParameterMap();
-        for (Map.Entry<String, String> stringStringEntry : parameterMap.entrySet()) {
+        Map<String,Object>parameterMap = req.getParameterMap();
+        for (Map.Entry<String, Object> stringStringEntry : parameterMap.entrySet()) {
             System.out.println(stringStringEntry.getKey()+" : "+stringStringEntry.getValue());
         }
+
+        System.out.println("--------------响应行");
+        resp.setStatus(404);
+
+        System.out.println("--------------响应头");
+        resp.setHeader("abc","jack");
+
+        System.out.println("--------------响应体");
+        resp.getWriter().write("好好学习");
+//          resp.getOutputStream().print(1);
+//          resp.getOutputStream().print(1);
     }
 
     @Override
