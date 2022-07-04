@@ -19,4 +19,16 @@
         <!--具体的访问地址，/ 开头-->
         <url-pattern>/quickServlet</url-pattern>
     </servlet-mapping>
+    
+    <!--LifeServlet-->
+    <servlet>
+        <servlet-name>LifeServlet</servlet-name>
+        <servlet-class>pro.fengjian.life.LifeServlet</servlet-class>
+        <load-on-startup>4</load-on-startup>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>LifeServlet</servlet-name>
+        <url-pattern>/lifeServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
